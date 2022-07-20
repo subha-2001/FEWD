@@ -14,7 +14,7 @@
       background-size: cover;
     }
     .container {
-      width: 30%;
+      width: 40%;
       height: auto;
       background-image: url("blnk.jpg");
       margin-right: auto;
