@@ -1,9 +1,8 @@
-
 body {
   background-color:#996633;
   color: white;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 17px;
+  font-size: large;
   padding: 15px;
   background-image:url("bakery/img/bakeee.jpg");
   position:absolute;
@@ -136,7 +135,7 @@ li {
   color: #996633;
   text-align: center;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: larger;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -144,6 +143,7 @@ li {
   display: block;
   margin-left: auto;
   margin-right: auto;
+
   width: 50%;
 }
 
@@ -186,6 +186,7 @@ tr.tr-header {
   margin-left: auto;
   margin-right: auto;
   padding-top: 0;
+  font-size: larger;
 }
 
 p {
@@ -193,7 +194,7 @@ p {
   line-height: 1.7;
 }
 
-.mb-0 { margin-bottom: 0; }
+.mb-0 { margin-bottom: 0;font-size: small; }
 img {
    max-width: 100%; 
   }
@@ -237,15 +238,10 @@ a { transition: all 0.3s ease; }
 .contact-link:hover { color: #000000; }
 
 .footer-text {
-  font-size: 0.9rem;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  font-size: larger;
+  margin-top: auto;
+  margin-bottom: auto;
   text-align: center;
   background-color: black;
   color: white;
-}
-@media screen and (min-width: 800px) {
-  .container {
-    margin: 1em 2em;
-  }
 }
