@@ -5,37 +5,220 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BLUE DREAM BAKKERY </title>
+    <link rel = "stylesheet" href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="logo-container">
-            <h4 class="logo">Bakkery</h4>
-        </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a class="nav-link" href="home.html">HOME</a></li>
-                <li><a class="nav-link" href="menu.html">Menu</a></li>
-                <li><a class="nav-link" href="aboutus.html">About us</a></li>
-                <li><a class="nav-link" href="order.html">Order</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-		<section class="presentation">
-			<div class="introduction">
-				<div class="intro-text">
-					<h1>We're not just a bakery. We're your new best friend</h1>									
-                     <p>The smell of good bread baking,like the sound of lightly flowing water,is indescribable in its evocation of innocent and delight. </p>
+  
+   <header>
+    
+      <div class="logo-container">
+        <h4 class="logo">Bakkery</h4>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li style="font-family:Georgia, 'Times New Roman', Times, serif;color: black;font-size: 25px;background-color: orange;";>BLUE DREAM BAKKERY</li>
+          <li><a class="nav-link" href="#">HOME</a></li>
+          <li><a class="nav-link" href="#menu">Menu</a></li>
+          <li><a class="nav-link" href="#about">About us</a></li>            <li><a class="nav-link" href="#contact">Contact us</a></li>
+        </ul>
+      </nav>
+    
+  </header>
+  <main>
+      <section class="presentation">
+        <div class="introduction">
+          <div class="intro-text">
+            <h1>We're not just a bakery. We're your new best friend</h1>
+            <p>The smell of good bread baking,like the sound of lightly flowing water,is indescribable in its evocation of innocent and delight. </p>
 					</div>
 				</div>
 				<div class="cover">
-					<img src="img/a.gif" >
-			    </div>
-            
-		</section>
+					<img src="bakery/img/a.gif" >
+			    </div> 
+
+		  </section>
+    
 	</main>
-   
+    <div class="main-content">
+        <!-- Cake Menu -->
+        <section class="section" id="menu">
+          <h2 class="section-header">Cake Menu</h2>
+          <img src="bakery/img/cake.webp" class="cookie">
+          <div class="responsive-table">
+            <table>
+              <tr class="tr-header">
+                <th>&nbsp;</th>
+                <th>Small</th>
+                <th>Medium</th>
+                <th>Large</th>
+              </tr>
+              <tr>
+                <td class="text-left">Red velvet</td>
+                <td>$30</td>
+                <td>$150</td>
+                <td>$390</td>
+              </tr>
+              <tr>
+                <td class="text-left">Blueberry</td>
+                <td>$15</td>
+                <td>$18</td>
+                <td>$20</td>
+              </tr>
+              <tr>
+                <td class="text-left">Blackberry</td>
+                <td>$10</td>
+                <td>$18</td>
+                <td>$20</td>
+              </tr>
+              <tr>
+                <td class="text-left">Black forest</td>
+                <td>$15</td>
+                <td>$18</td>
+                <td>$200</td>
+              </tr>
+              <tr>
+                <td class="text-left">Icecream Cake</td>
+                <td>$10</td>
+                <td>$15</td>
+                <td>$450</td>
+              </tr>
+              <tr>
+                <td class="text-left">Cupcake</td>
+                <td>$15</td>
+                <td>$80</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td class="text-left">Chocolate cake</td>
+                <td>$20</td>
+                <td>$90</td>
+                <td>$350</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+    
+        <!-- Cookies Menu -->
+        <section class="section">
+          <h2 class="section-header">Cookies Menu</h2>
+          <img src="bakery/img/cokkie.jpeg" class="cookie">
+          <div class="responsive-table">
+            <table>
+              <tr class="tr-header">
+                <th>&nbsp;</th>
+                <th>Pieces</th>
+                <th>Packets</th>
+                <th>Large(in kgs)</th>
+              </tr>
+              <tr>
+                <td class="text-left">Chocolate chip cookies</td>
+                <td>$5</td>
+                <td>$10</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td class="text-left">Sugar cookies</td>
+                <td>$8</td>
+                <td>$12</td>
+                <td>$4</td>
+              </tr>
+              <tr>
+                <td class="text-left">Fortune cookies</td>
+                <td>$4</td>
+                <td>$10</td>
+                <td>$4</td>
+              </tr>
+              <tr>
+                <td class="text-left">Butter cookies</td>
+                <td>$8</td>
+                <td>$12</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td class="text-left">Sandwich cookie</td>
+                <td>$10</td>
+                <td>$10</td>
+                <td>$8</td>
+              </tr>
+              <tr>
+                <td class="text-left">Hallongrotta</td>
+                <td>$12</td>
+                <td>$12</td>
+                <td>-</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+    
+        <!-- Special Items -->
+        <section class="section">
+          <h2 class="section-header">Special Items</h2>
+          <div class="special-items">
+            <figure class="special-item">
+              <img src="bakery/img/rose.webp" alt="Image" />
+              <figcaption>
+                <span class="item-name">Rose cupcakes</span>
+                <span class="item-price">$25</span>
+              </figcaption>
+            </figure>
+            <figure class="special-item">
+              <img src="bakery/img/cook.webp" alt="Image"  />
+              <figcaption>
+                <span class="item-name">Flourless peanut butter chocolate chip cookies</span>
+                <span class="item-price">$30</span>
+              </figcaption>
+            </figure>
+            <figure class="special-item">
+              <img src="bakery/img/apple.webp" alt="Image"  />
+              <figcaption>
+                <span class="item-name">Apple crumble in a glass
+
+                </span>
+                <span class="item-price">$35</span>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+        <hr />
+        <!-- About our cafe -->
+        <section class="section section-small" id="about">
+          <h2 class="section-header">About our bakery</h2>
+          <img src="bakery/img/bake.jpg">
+          <p class="mb-0">
+            When we inaugurated our bakery for the first time in our 
+            very own city Chennai, in 2-19, people did not have any 
+            understanding for cheese, cream cakes, pizza, burgers etc. 
+            but we took the liability to pioneer this fresh food into the
+            town, which turned out to be a great accomplishment, which had
+            not been achievable devoid of you people’s love and loyalty 
+            toward us.This website has been shaped so that we people can
+            order cakes for their loved ones. You can share your incredibly
+            valuable views on our bakery, and any kind of suggestions would 
+            be highly appreciated.
+          </p>
+          <p class="mb-0">
+            Bakery & Company began baking Confectionery produc ts in low volume bakery facilities. The original handmade pastries, cakes and sandwiches have always used the finest quality. 100% natural healthy ingredients: Highest quality flour, Fresh whole grade A eggs, butter creams and dairy products, pure cane sugar, dark and white chocolates, fresh fruit purees and fillings, the world's finest vanilla and essences.
+          </p>
+        </section>
+        <hr />
+        <!-- Talk to us -->
+        <section class="section section-small">
+          <h2 class="section-header">Contact us</h2>
+          <p class="mb-0">
+            <p>Contact us </p>
+            <p>Mobile:9087264728</p>
+            <p>Email:abc@gmail.com</p>
+          </p>
+    
+        </section>
+
+        <footer class="footer-text">
+          Copyright &copy; 2022 
+          <a href="https://www.bing.com/aclk?ld=e8tyTcuLQeL7Rml8AyfWUFPzVUCUxla8nkdu1mmAAbyQrdIh7Vk7pvqj7j6sINFS5mbezz0S6XJuk2fQesu2m11a_FZco1CU9qxUq89K8qPkwOGtdvkzD6DNk_loOPVMiHrp-xRwF6jQyL7LFVb-KNgi0iAkVifrqcZRlpBWzz0KUWKcRWyA8TFkFn_DQF6-48tiWz1w&u=aHR0cHMlM2ElMmYlMmZ3d3cuZm5wLmNvbSUyZmNha2VzJTNmZWZfaWQlM2QlM2FHJTNhcyUyNnNfa3djaWQlM2RBTCE3MzQhMyEhYiEhbyEhRFNBJTI1MjBDYWtlcyUyNm1zY2xraWQlM2RlNDYxZDlmOWM5NWQxYjc0NDUxY2JiMTM5MjZhZjNjNA&rlid=e461d9f9c95d1b74451cbb13926af3c4&ntb=1" class="footer-link">Blue dream bakery</a>
+        </footer>
+      </div>
+    </div>
        
       
 </body>
