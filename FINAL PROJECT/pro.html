@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nursery Plants</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"> </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header>
+
+        <header>
+
+            <div class="header-1">
+          
+                <a href="#" class="logo"> <i class="fas fa-leaf"></i> ORCHID </a>
+                <div id="menu-bar" class="fas fa-bars"></div>
+          
+                <nav class="navbar">
+                    <a href="/index.html">home</a>
+                    <a href="/Category/category.html">category</a>
+                    <a href="/Product/pro.html">product</a>
+                    <a href="/ContactPage/contact.html">contact</a>
+                </nav>
+          
+            </div>
+            <div class="header-2">
+          
+                <div class="share">
+                    <span> follow us : </span>
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+          
+                <div class="call">
+                    <span> contact us : </span>
+                    <a href="#" class="fas fa-phone">+123-456-7890</a>
+                </div>
+          
+    
+        </div>
+
+        <div class="header-3">
+
+            <form action="" class="search-bar-container">
+                <input type="search" id="search-bar" placeholder="search here...">
+                <label for="search-bar" class="fas fa-search"></label>
+            </form>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="login.html" class="fas fa-user-circle"></a>
+            </div>   <h5 style="background-color:cadetblue">Plants do not speak, but their silence is alive with change.</h5>
+            <div class="icons">
+                
+                <div class="cart-btn">
+                    <i id="cart" class="fas fa-shopping-cart"></i>
+                    <span class="cart-quantity">0</span>
+
+                    <div class="cart-modal-overlay">
+                        <div class="cart-modal">
+                            <i id="close-btn" class="fas fa-times"></i>
+                            <h1 class="cart-is-empty">Cart is empty</h1>
+
+                            <div class="product-rows">
+                            </div>
+                            <div class="total">
+                                <h1 class="cart-total">TOTAL</h1>
+                                <span class="total-price">$0</span>
+                                <button type="button" class="btn btn-primary launch" data-toggle="modal" data-target="#staticBackdrop"> <i class="fa fa-rocket"></i> Pay Now
+                                </button>
+                                <!-- Modal -->
+                                <div class="modal fade" class="bill" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"> <div class="modal-dialog"> <div class="modal-content"> <div class="modal-body"> <div class="text-right"> <i class="fa fa-close close" data-dismiss="modal"></i> </div> <div class="tabs mt-3"> <ul class="nav nav-tabs" id="myTab" role="tablist"> 
+                                    <li class="nav-item" role="presentation"> <a class="nav-link active" id="visa-tab" data-toggle="tab" href="#visa" role="tab" aria-controls="visa" aria-selected="true"> <img src="https://www.freepnglogos.com/uploads/visa-and-mastercard-logo-26.png" width="80"> </a> </li> <li class="nav-item" role="presentation"> <a class="nav-link" id="paypal-tab" data-toggle="tab" href="#paypal" role="tab" aria-controls="paypal" aria-selected="false">
+                                    <img src="https://cdn.pixabay.com/photo/2015/05/26/09/37/paypal-784404_960_720.png" width="80"> </a> </li> </ul> <div class="tab-content" id="myTabContent"> <div class="tab-pane fade show active" id="visa" role="tabpanel" aria-labelledby="visa-tab"> <div class="mt-4 mx-4"> <div class="text-center"> <h5>Credit card</h5> </div> <div class="form mt-3"> <div class="inputbox"> <input type="text" name="name" class="form-control" required="required"> 
+                                    <span>Cardholder Name</span> </div> <div class="inputbox"> <input type="text" name="name" min="1" max="999" class="form-control" required="required"> <span>Card Number</span> <i class="fa fa-eye"></i> </div> <div class="d-flex flex-row"> <div class="inputbox"> <input type="text" name="name" min="1" max="999" class="form-control" required="required"> <span>Expiration Date</span> </div> <div class="inputbox"> <input type="text" name="name" min="1" max="999" class="form-control" required="required"> <span>CVV</span> </div> </div> <div class="px-5 pay"> <button class="btn btn-success btn-block" onclick=" buttonclick()">Add card</button> </div> </div> </div> </div> <div class="tab-pane fade" id="paypal" role="tabpanel" aria-labelledby="paypal-tab"> <div class="px-5 mt-5"> <div class="inputbox"> <input type="text" name="name" class="form-control" required="required"> <span>Paypal Email Address</span> </div> <div class="pay px-5"> 
+                                        <span>Cardholder Name</span> </div> <div class="inputbox"> <input type="text" name="name" min="1" max="999" class="form-control" required="required"> <span>Card Number</span> <i class="fa fa-eye"></i> </div> <div class="d-flex flex-row"> <div class="inputbox"> <input type="text" name="name" min="1" max="999" class="form-control" required="required"> <span>Expiration Date</span> </div> <div class="inputbox"> <input type="text" name="name" min="1" max="999" class="form-control" required="required"> <span>CVV</span> </div> </div> <div class="px-5 pay"> <button class="btn btn-success btn-block" onclick=" buttonclick()">Add card</button> </div> </div> </div> </div> <div class="tab-pane fade" id="paypal" role="tabpanel" aria-labelledby="paypal-tab"> <div class="px-5 mt-5"> <div class="inputbox"> <input type="text" name="name" class="form-control" required="required"> <span>Paypal Email Address<span>Cardholder Name</span> </div> <div class="inputbox"> <input type="text" name="name" min="1" max="999" class="form-control" required="required"> <span>Card Number</span> <i class="fa fa-eye"></i> </div> <div class="d-flex flex-row"> <div class="inputbox"> <input type="text" name="name" min="1" max="999" class="form-control" required="required"> <span>Expiration Date</span> </div> <div class="inputbox"> <input type="text" name="name" min="1" max="999" class="form-control" required="required"> <span>CVV</span> </div> </div> <div class="px-5 pay"> <button class="btn btn-success btn-block" onclick=" buttonclick()">Add card</button> </div> </div> </div> </div> <div class="tab-pane fade" id="paypal" role="tabpanel" aria-labelledby="paypal-tab"> <div class="px-5 mt-5"> <div class="inputbox"> <input type="text" name="name" class="form-control" required="required"> <span>Paypal Email Address</span> </div> <div class="pay px-5"> </span> </div> <div class="pay px-5"> </div> </div> </div> </div> </div> </div> </div> </div>
+                                        </div>
+                </div>
+            </div> </header>
+    <!--  products  -->
+    <div class="items-container">
+
+        <!-- <div class="row g-3 p-5">-->
+        <div class="row">
+            <div class="card">
+                <img class="product-image" src="/Product/images/product1.jpg" alt="">
+                <button class="add-to-cart">Add to cart</button>
+                <p style="font-weight: bold;
+                font-size: 1.5rem;">Nephrolepis</p>
+                <span class="product-price">$395</span>
+            </div>
+            <div class="card">
+                <img class="product-image" src="/Product/images/product2.jpg" alt="">
+                <button class="add-to-cart">Add to cart</button>
+                <p style="font-weight: bold;
+                font-size: 1.5rem;">Lucky Bamboo Stalk</p>
+                <span class="product-price">$175</span>
+            </div>
+            <div class="card">
+                <img class="product-image" src="/Product/images/product3.jpg" alt="">
+                <button class="add-to-cart">Add to cart</button>
+                <p style="font-weight: bold;
+                font-size: 1.5rem;">Succulent Plant</p>
+                <span class="product-price">$250</span>
+            </div>
+            <div class="card">
+                <img class="product-image" src="/Product/images/product4.jpg" alt="">
+                <button class="add-to-cart">Add to cart</button>
+                <p style="font-weight: bold;
+                font-size: 1.5rem;">Spider Plant</p>
+                <span class="product-price">$375</span>
+            </div>
+            <div class="card">
+                <img class="product-image" src="/Product/images/product5.jpg" alt="">
+                <button class="add-to-cart">Add to cart</button>
+                <p style="font-weight: bold;
+                font-size: 1.5rem;">Badam Tree</p>
+                <span class="product-price">$230</span>
+            </div>
+            <div class="card">
+                <img class="product-image" src="/Product/images/product6.jpg" alt="">
+                <button class="add-to-cart">Add to cart</button>
+                <p style="font-weight: bold;
+                font-size: 1.5rem;">Ficus microcarpa Bonsai</p>
+                <span class="product-price">$130</span>
+            </div>
+            <div class=" card">
+                <img class="product-image" src="/Product/images/product7.jpg" alt="">
+                <button class="add-to-cart">Add to cart</button>
+                <p style="font-weight: bold;
+                font-size: 1.5rem;">Outdoor Plants</p>
+                <span class="product-price">$160</span>
+            </div>
+            <div class=" card">
+                <img class="product-image"
+                    src="/Product/images/product8.jpg"  alt="">
+                <button class="add-to-cart">Add to cart</button>
+                <p style="font-weight: bold;
+                font-size: 1.5rem;">Air Plant</p>
+                
+                <span class="product-price">$150</span>
+            </div>
+            <div class=" card">
+                <img class="product-image"
+                    src="/Product/images/product9.jpg" alt="">
+                <button class="add-to-cart">Add to cart</button>
+                <p style="font-weight: bold;
+                font-size: 1.5rem;">Night Blooming Jasmine </p>
+                <span class="product-price">$220</span>
+            </div>
+            <div class=" card">
+                <img class="product-image"
+                    src="/Product/images/product10.jpg" alt="">
+                <button class="add-to-cart">Add to cart</button>
+                <p style="font-weight: bold;
+                font-size: 1.5rem;">Elephant bush</p>
+                <span class="product-price">$320</span>
+            </div>
+            <div class=" card">
+                <img class="product-image"
+                    src="/Product/images/product11.jpg" alt="">
+                <button class="add-to-cart">Add to cart</button>
+                <p style="font-weight: bold;
+                font-size: 1.5rem;">Ferns</p>
+                <span class="product-price">$100</span>
+            </div>
+            <div class=" card">
+                <img class="product-image"
+                    src="/Product/images/product12.jpg" alt="">
+                <button class="add-to-cart">Add to cart</button>
+                <p style="font-weight: bold;
+                font-size: 1.5rem;">Portulacaa</p>
+                <span class="product-price">$170</span>
+            </div>
+            <div class=" card">
+                <img class="product-image"
+                    src="/Product/images/product13.jpg" alt="">
+                <button class="add-to-cart">Add to cart</button>
+                <p style="font-weight: bold;
+                font-size: 1.5rem;">Tuberose</p>
+                <span class="product-price">$330</span>
+            </div>
+            <div class=" card">
+                <img class="product-image"
+                    src="/Product/images/product14.jpg" alt="">
+                <button class="add-to-cart">Add to cart</button>
+                <p style="font-weight: bold;
+                font-size: 1.5rem;">Scented rose</p>
+                <span class="product-price">$200</span>
+            </div>
+            <div class=" card">
+                <img class="product-image"
+                    src="/Product/images/product15.jpg" alt="">
+                <button class="add-to-cart">Add to cart</button>
+                <p style="font-weight: bold;
+                font-size: 1.5rem;">Kalanchoe</p>
+                <span class="product-price">$160</span>
+            </div>
+            <div class=" card">
+                <img class="product-image"
+                    src="/Product/images/product16.jpg" alt="">
+                <button class="add-to-cart">Add to cart</button>
+                <p style="font-weight: bold;
+                font-size: 1.5rem;">Adenium Plants</p>
+                <span class="product-price">$289</span>
+            </div>
+            <div class=" card">
+                <img class="product-image"
+                    src="/Product/images/product17.jpg" alt="">
+                <button class="add-to-cart">Add to cart</button>
+                <p style="font-weight: bold;
+                font-size: 1.5rem;">Dwarf Fiddle</p>
+                <span class="product-price">$300</span>
+            </div>
+            <div class=" card">
+                <img class="product-image"
+                    src="/Product/images/product18.jpg" alt="">
+                <button class="add-to-cart">Add to cart</button>
+                <p style="font-weight: bold;
+                font-size: 1.5rem;">Perennial Bushes</p>
+                <span class="product-price">$120</span>
+            </div>
+            <div class=" card">
+                <img class="product-image"
+                    src="/Product/images/product19.jpg" alt="">
+                <button class="add-to-cart">Add to cart</button>
+                <p style="font-weight: bold;
+                font-size: 1.5rem;"> Champa</p>
+                <span class="product-price">$200</span>
+            </div>
+            <div class=" card">
+                <img class="product-image"
+                    src="/Product/images/product20.jpg" alt="">
+                <button class="add-to-cart">Add to cart</button>
+                <p style="font-weight: bold;
+                font-size: 1.5rem;">Damascus Rose</p>
+                <span class="product-price">$320</span>
+            </div>
+            
+
+        </div>
+    </div>
+
+
+    <!-- END EDMO HTML (Happy Coding!)-->
+    </main>
+
+
+
+    </section>
+    <div class="footer">
+
+        <div class="box-container">
+      
+            <div class="box">
+                <h3>About Us</h3>
+                <p>For the ones who are always in need of the 25th hour in a day. Remind them to sit and breathe and take a few moments for themselves without adding to their already full calendar with plants that come in premium self-watering pots. Select from an extensive list of our super healthy plants and watch them smile.</p>
+            </div>
+            <div class="box">
+                <h3>Branch Locations</h3>
+                <a href="#">India</a>
+                <a href="#">USA</a>
+                <a href="#">Japan</a>
+                <a href="#">France</a>
+            </div>
+            <div class="box">
+                <h3>Quick Links</h3>
+
+                <a href="/index.html">Home</a>
+                <a href="/Category/category.html">category</a>
+                <a href="pro.html">product</a>
+                <a href="/ContactPage/contact.html">contact</a>
+            </div>
+            <div class="box">
+                <h3>Follow Us</h3>
+                <a href="#">facebook</a>
+                <a href="#">twitter</a>
+                <a href="#">instagram</a>
+                <a href="#">linked</a>
+            </div>
+      
+        </div>
+        <div>
+          <hr>
+        <h4 class="credit" style="text-align: center; padding: 30px;"> created by <span style="color:rgb(62, 186, 218) ;">&copy; TCR Interns </span> | all rights reserved! </h4>
+        <div class="foot" style="background-color: black; height:30px;"></div>
+      </div>
+      </div>
+      
+
+    <a href="pro.html" class="scroll-top fas fa-angle-up"></a>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="script.js"></script>
+</body>
+
+</html>
